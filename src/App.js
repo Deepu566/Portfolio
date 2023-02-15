@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./Pages/Sidebar";
+import Profile from "./Pages/Profile";
+import AboutMe from "./Pages/AboutMe";
+import Skill from "./Pages/Skill";
+import Resume from "./Pages/Resume";
+import GetinTouch from "./Pages/GetinTouch";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex">
+      <div className="App h-screen w-[20%]">
+        <Sidebar />
+      </div>
+      <div className="w-[80%]">
+        <Profile />
+        <AboutMe />
+        <Skill />
+        <Resume />
+        <GetinTouch />
+      </div>
     </div>
   );
 }
-
 export default App;
