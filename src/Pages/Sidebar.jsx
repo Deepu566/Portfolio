@@ -1,8 +1,6 @@
 import React from 'react'
-import { AiOutlineInstagram } from "react-icons/ai"
-import { FiTwitter } from "react-icons/fi"
-import { FaFacebookF } from "react-icons/fa"
-import { AiOutlineGithub } from "react-icons/ai"
+import NavContent from '../Component/NavContent'
+import Social from '../Component/Social'
 
 const Sidebar = () => {
     return (
@@ -15,34 +13,8 @@ const Sidebar = () => {
                     Deepak Kumar
                 </h1>
             </header>
-            <section className='child:text-center child:cursor-pointer child-hover:text-[#FFC107] flex flex-col gap-6 font-medium text-lg'>
-                <div>
-                    <a href="#home">
-                        Home
-                    </a>
-                </div>
-                <div><a href="#about-me">About Me</a></div>
-                <div>
-                    <a href="#skills"> Skills</a>
-                </div>
-                <div>Resume</div>
-                <div>Contact</div>
-            </section>
-            <footer className='flex gap-5 text-white items-center'>
-                <a href="" target="_blank" rel="noopener noreferrer">
-                    <AiOutlineInstagram />
-                </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <FaFacebookF />
-                </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <FiTwitter />
-                </a>
-                <a href="http://" target="_blank" rel="noopener noreferrer">
-                    <AiOutlineGithub />
-                </a>
-            </footer>
-
+            <NavContent />
+            <Social />
         </div>
     )
 }

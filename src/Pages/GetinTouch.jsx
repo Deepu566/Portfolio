@@ -5,23 +5,23 @@ const GetinTouch = () => {
     return (
         <div className='py-20 bg-teal-900'>
             <Title title={"Get in Touch"} title2={"Contact"} />
-            <form action="">
-                <div className='px-24 flex flex-col  gap-5'>
+            <form action="" id="contact">
+                <div className='px-16 flex flex-col  gap-5'>
                     <h1 className='self-start font-bold text-3xl text-white mt-20'>Send me a Messege</h1>
-                    <div className='flex gap-8 text-lg'>
+                    <div className='flex gap-8 text-lg max-sm:flex-col'>
                         <input className='get-in-touch-input'
                             type="text" name='firstName' placeholder='First name' />
                         <input className='get-in-touch-input'
                             type="text" name='lastName' placeholder='Last name' />
                     </div>
-                    <div className='flex gap-8 text-lg'>
+                    <div className='flex gap-8 text-lg max-sm:flex-col'>
                         <input className='get-in-touch-input'
                             type="text" name='email' placeholder='Email' />
                         <input className='get-in-touch-input'
                             type="text" name='mobile' placeholder='Mobile' />
                     </div>
                     <div className=''>
-                        <textarea className='get-in-touch-input w-full'
+                        <textarea className='get-in-touch-input w-full max-sm:h-32'
                             name="message" id="" cols="30" rows="10" placeholder='Tell me about you...'></textarea>
                     </div>
                 </div>

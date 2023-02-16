@@ -11,13 +11,17 @@ const AboutMe = () => {
     return (
         <div id='about-me' className='text-white relative  flex flex-col gap-20 py-20 bg-[#212529] '>
             <Title title={"About me"} title2={"About"} />
-            <section className='flex leading-loose h-[60%] px-12'>
-                <div className='w-[65%] flex flex-col gap-8'>
-                    <h2 className='text-3xl font-bold tracking-tight'>I'm
+            <section className='flex 
+             leading-loose h-[60%] px-12 max-sm:flex-col'>
+                <div className='w-[65%] flex flex-col gap-8 
+                max-sm:self-center'>
+                    <h2 className='text-3xl font-bold tracking-tight
+                    max-sm:text-center'>I'm
                         <span className='text-[#FFC107]'> Deepak, </span>
                         a Web Developer
                     </h2>
-                    <div className='text-gray-400'>
+                    <div className='text-gray-400
+                    max-sm:text-justify'>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             Quo officia modi cum incidunt blanditiis quae ducimus,
                             nihil culpa obcaecati sed! Quisquam rerum hic quidem
@@ -31,7 +35,8 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className='w-[35%] text-gray-200 px-6 border-gray-500 
-                child:border-b-[1px] child:p-3 '>
+                child:border-b-[1px] child:p-3 
+                max-sm:w-full'>
                     <div><span className='font-bold'>Name : </span> Deepak Kumar</div>
                     <div className='text-[#FFC107]'><span className='text-gray-200 font-bold'>Email : </span> deepu566255@gmail.com</div>
                     <div><span className='font-bold'>Age : </span> 23</div>

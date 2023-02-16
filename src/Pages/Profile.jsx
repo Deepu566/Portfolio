@@ -15,17 +15,20 @@ const Profile = () => {
         })
     })
     return (
-        <div id='home' className=' h-screen 
+        <div id='home' className='h-screen 
             bg-[url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80")]
     bg-no-repeat bg-fixed bg-cover bg-left-top
-            flex flex-col items-center justify-center gap-4 text-[white] '>
+            flex flex-col items-center justify-center gap-4 text-[white]
+            max-sm:w-screen max-sm:gap-14'>
             <h1 className='text-3xl font-semibold'> Welcome</h1>
-            <h1 className='text-6xl min-h-[50px] font-extrabold' ref={element}></h1>
+            <h1 className='text-6xl min-h-[50px] font-extrabold max-sm:text-center max-sm:h-40' ref={element}></h1>
             <div className='text-2xl text-[#E6DDC4]'>based in Ranchi, Jharkhand.</div>
-            <button className='
+            <a href="#contact">
+                <button className='
             border-2 border-[#FFC107] text-[#FFC107] rounded-full px-10 font-bold text-2xl py-3
             hover:bg-[#FFC107] hover:text-white transition-all
             '>Text me</button>
+            </a>
         </div >
     )
 }
