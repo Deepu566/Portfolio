@@ -29,7 +29,8 @@ const GetinTouch = () => {
                 <div className='flex justify-center'>
                     <button className='rounded-full px-24 py-3 mt-6
                      bg-[#FFC107]
-                     text-white font-bold'>Send</button>
+                     text-white font-bold'>Send
+                    </button>
                 </div>
 
             </form>

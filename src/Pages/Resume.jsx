@@ -36,13 +36,13 @@ const Resume = () => {
         }
     ]
     return (
-        <div id="resume" className='px-10 py-10 bg-[#212529]'>
+        <div id="resume" className='px-12 py-10 bg-[#212529]'>
             <Title title={"Resume"} title2={"Resume"} />
             <div className='flex gap-10 mt-20 child:flex-1 max-sm:flex-col
-            max-sm:items-center'>
-                <div className='flex flex-col gap-5'>
-                    <h1 className='font-bold text-2xl text-white'>My Education</h1>
-                    <div className='flex flex-col gap-5'>
+            max-sm:items-center max-sm:px-20'>
+                <div className='flex flex-col  gap-5'>
+                    <h1 className='font-bold  text-2xl text-white'>My Education</h1>
+                    <div className='flex flex-col  gap-5'>
                         {
                             education.map((ed) => (
                                 <Detailcard detail={ed} />
