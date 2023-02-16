@@ -6,7 +6,8 @@ const GetinTouch = () => {
         <div className='py-20 bg-teal-900'>
             <Title title={"Get in Touch"} title2={"Contact"} />
             <form action="" id="contact">
-                <div className='px-16 flex flex-col  gap-5'>
+                <div className='px-16 flex flex-col  gap-5
+                max-sm:px-3'>
                     <h1 className='self-start font-bold text-3xl text-white mt-20'>Send me a Messege</h1>
                     <div className='flex gap-8 text-lg max-sm:flex-col'>
                         <input className='get-in-touch-input'

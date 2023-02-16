@@ -11,9 +11,9 @@ const AboutMe = () => {
     return (
         <div id='about-me' className='text-white relative  flex flex-col gap-20 py-20 bg-[#212529] '>
             <Title title={"About me"} title2={"About"} />
-            <section className='flex 
-             leading-loose h-[60%] px-12 max-sm:flex-col'>
-                <div className='w-[65%] flex flex-col gap-8 
+            <section className='flex  px-8
+             leading-loose h-[60%]  max-sm:flex-col'>
+                <div className=' flex flex-col gap-8 
                 max-sm:self-center'>
                     <h2 className='text-3xl font-bold tracking-tight
                     max-sm:text-center'>I'm
