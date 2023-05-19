@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineInstagram } from "react-icons/ai"
+import { FaLinkedinIn } from "react-icons/fa"
 import { FiTwitter } from "react-icons/fi"
 import { FaFacebookF } from "react-icons/fa"
 import { AiOutlineGithub } from "react-icons/ai"
@@ -9,7 +9,7 @@ const Social = (props) => {
         <div className='max-sm:text-2xl text-white' >
             <footer className='flex gap-5 text-white items-center '>
                 <a href="https://www.instagram.com/deepu5439/" target="_blank" rel="noopener noreferrer">
-                    <AiOutlineInstagram />
+                    <FaLinkedinIn />
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=100018032026012" target="_blank" rel="noopener noreferrer">
                     <FaFacebookF />

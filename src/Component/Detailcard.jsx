@@ -2,7 +2,7 @@ import React from 'react'
 
 const Detailcard = ({ detail }) => {
     return (
-        <div className='w-[460px] py-10  px-10 bg-black rounded-md flex flex-col gap-3
+        <div key={detail.id} className='w-[460px] py-10  px-10 bg-black rounded-md flex flex-col gap-3
         max-sm:w-80
     '>
             <div className='w-3/6 rounded-full py px-3 font-bold text-white bg-[#FFC107]'>{detail.session}</div>

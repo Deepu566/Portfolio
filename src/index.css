@@ -12,6 +12,7 @@
 
 *::selection {
     background-color: #FFC107;
+    color: black;
 }
 
 .skill-circle {
@@ -19,8 +20,6 @@
     -moz-box-shadow: 0px 10px 5px 0px rgba(19, 166, 92, 1);
     box-shadow: 0px 10px 5px 0px rgba(19, 166, 92, 1);
 }
-
-/* rounded px-5 py-2 focus:outline-none */
 
 .get-in-touch-input {
     flex: 1;
@@ -32,4 +31,12 @@
 
 .get-in-touch-input:focus {
     outline: 1px
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
 }

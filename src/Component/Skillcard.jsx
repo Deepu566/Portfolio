@@ -8,7 +8,7 @@ const Skillcard = ({ skill }) => {
                     <img
                         src={require(`../utilities/${skill}.png`)}
                         alt="name"
-                        className='cursor-pointer'
+                        className='cursor-pointer h-36'
                     />
                 </div>
             </div>

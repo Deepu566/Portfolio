@@ -6,7 +6,7 @@ import CV from "../utilities/Resume.pdf"
 const Resume = () => {
     const education = [
         {
-            id: 3,
+            id: 1,
             session: "2020-2022",
             course: "MCA",
             college: "Dr. Shyama Prasad Mukharjee University",
@@ -20,7 +20,7 @@ const Resume = () => {
             desc: "Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque porro"
         },
         {
-            id: 1,
+            id: 3,
             session: "2015-2017",
             course: "Intermediate",
             college: "St. John's Inter College",
@@ -60,7 +60,7 @@ const Resume = () => {
                         }
                     </div>
                     <button className='rounded-full px-12 py-3 mt-6 bg-[#FFC107] text-white font-bold'>
-                        <a class="btn line-btn-dark btn-icon btn-radius" href={CV} title="" download>Download CV</a>
+                        <a class="btn line-btn-dark btn-icon btn-radius" href={CV} title="" download>Download Resume</a>
                     </button>
                 </div>
             </div>
