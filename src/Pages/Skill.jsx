@@ -4,12 +4,30 @@ import Title from '../Component/Title'
 
 const Skill = () => {
     const skills = [
-        "html",
-        "css",
-        "js",
-        "react",
-        "Tailwindcss",
-        "Java",
+        {
+            id: 1,
+            sub: "html"
+        },
+        {
+            id: 2,
+            sub: "css"
+        },
+        {
+            id: 3,
+            sub: "js"
+        },
+        {
+            id: 4,
+            sub: "react"
+        },
+        {
+            id: 5,
+            sub: "Tailwindcss"
+        },
+        {
+            id: 6,
+            sub: "Java"
+        }
     ]
     return (
         <div id='skills' className=' relative py-20 text-white bg-teal-900 px-24'>
@@ -17,7 +35,7 @@ const Skill = () => {
             <div className='flex flex-wrap mt-32 gap-20 justify-center items-center'>
                 {
                     skills.map(skill => (
-                        <Skillcard skill={skill} />
+                        <Skillcard key={skill.id} skill={skill} />
                     ))
 
                 }

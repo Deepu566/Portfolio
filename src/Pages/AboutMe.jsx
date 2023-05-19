@@ -44,17 +44,11 @@ const AboutMe = () => {
                     <div className='border-none'><span className='font-bold'>From : </span> Ranchi Jharkhand, India </div>
                     <div className='border-none'>
                         <button className='rounded-full px-12 py-3 mt-6 bg-[#FFC107] text-white font-bold'>
-                            <a class="btn line-btn-dark btn-icon btn-radius" href={Resume} title="" download>Download Resume</a>
+                            <a className="btn line-btn-dark btn-icon btn-radius" href={Resume} title="" download>Download Resume</a>
                         </button>
                     </div>
                 </div>
             </section>
-            {/* <footer className=" mt-6 text-[gray] text-9xl flex child:flex-1 child:border-r border-gray-500">
-                <AiFillHtml5 className='text-blue-700' />
-                <TfiCss3 />
-                <DiJavascript1 />
-                <DiReact />
-            </footer> */}
         </div>
     )
 }

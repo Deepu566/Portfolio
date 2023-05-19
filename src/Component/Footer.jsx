@@ -4,18 +4,17 @@ import Social from "../Component/Social"
 const Footer = () => {
     return (
         <div>
-            <footer class="text-center bg-black text-white">
-                <div class="container pt-9">
-                    <div class="flex justify-center mb-9">
+            <footer className="text-center bg-black text-white">
+                <div className="container pt-9">
+                    <div className="flex justify-center mb-9">
                         <Social />
                     </div>
                 </div>
-                <div class="text-center text-gray-700 p-4">
+                <div className="text-center text-gray-700 p-4">
                     © 2021 Copyright:
-                    <a class="text-gray-800" href="">lorem lorem</a>
+                    <a className="text-gray-800" href="">lorem lorem</a>
                 </div>
             </footer >
-
         </div >
     )
 }

@@ -29,6 +29,7 @@ const Resume = () => {
     ]
     const experience = [
         {
+            id: 1,
             session: "2021-2022",
             course: "Customer Service Exxecutive",
             college: "Concentrix Daksh Private Limited",
@@ -45,7 +46,7 @@ const Resume = () => {
                     <div className='flex flex-col  gap-5'>
                         {
                             education.map((ed) => (
-                                <Detailcard detail={ed} />
+                                <Detailcard key={ed.id} detail={ed} />
                             ))
                         }
                     </div>
@@ -55,12 +56,12 @@ const Resume = () => {
                     <div className='flex flex-col gap-5'>
                         {
                             experience.map((ed) => (
-                                <Detailcard detail={ed} />
+                                <Detailcard key={ed.id} detail={ed} />
                             ))
                         }
                     </div>
                     <button className='rounded-full px-12 py-3 mt-6 bg-[#FFC107] text-white font-bold'>
-                        <a class="btn line-btn-dark btn-icon btn-radius" href={CV} title="" download>Download Resume</a>
+                        <a className="btn line-btn-dark btn-icon btn-radius" href={CV} title="" download>Download Resume</a>
                     </button>
                 </div>
             </div>

@@ -5,7 +5,7 @@ import { app, db } from '../firebase'
 import { addDoc, collection } from 'firebase/firestore'
 
 const GetinTouch = () => {
-    const [showForm, setShowForm] = useState(false)
+    const [showForm, setShowForm] = useState(true)
 
     const informationRef = collection(db, 'information')
     const handleSubmit = async (e) => {
@@ -17,10 +17,13 @@ const GetinTouch = () => {
             mobile: e.target[3].value,
             messege: e.target[4].value
         }
-        await addDoc(informationRef, details)
-        setShowForm(false)
+        try {
+            await addDoc(informationRef, details)
+        } catch (e) {
+            console.log(e)
+        }
+        setShowForm(false);
     }
-    console.log(showForm)
     return (
         <div className='py-20 bg-teal-900'>
             <Title title={"Get in Touch"} title2={"Contact"} />
